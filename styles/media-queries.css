@@ -1,0 +1,244 @@
+/* Media Queries for Responsive Design */
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    /* General adjustments */
+    body {
+        padding-top: 60px;
+    }
+    
+    .navbar {
+        height: 60px;
+    }
+    
+    .logo {
+        height: 35px;
+    }
+    
+    /* Hero section adjustments */
+    .hero-title {
+        font-size: clamp(1.8rem, 4vw, 3rem);
+    }
+    
+    .hero-subtitle {
+        font-size: clamp(0.9rem, 1.8vw, 1.3rem);
+    }
+    
+    /* Trainer cards */
+    .trainer-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {
+    /* Navigation adjustments */
+    .navbar-collapse {
+        background-color: var(--dark-color);
+        padding: 1rem;
+        margin-top: 0.5rem;
+        border-radius: 0.25rem;
+    }
+    
+    /* Hero section */
+    .hero-section {
+        min-height: 40vh;
+    }
+    
+    /* Section titles */
+    .section-title {
+        margin-bottom: 2rem;
+    }
+    
+    /* Pricing cards */
+    .pricing-card {
+        margin-bottom: 2rem;
+    }
+    
+    /* Footer adjustments */
+    .footer-section {
+        margin-bottom: 2rem;
+    }
+    
+    /* Testimonial cards */
+    .testimonial-card {
+        margin-bottom: 1.5rem;
+    }
+}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    /* General adjustments */
+    body {
+        padding-top: 56px;
+    }
+    
+    .navbar {
+        height: 56px;
+        padding: 0.5rem 0;
+    }
+    
+    /* Hero section */
+    .hero-section {
+        min-height: 35vh;
+        padding: 30px 0;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+    
+    .hero-buttons .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    /* About section */
+    .about-image {
+        margin-bottom: 2rem;
+    }
+    
+    /* Contact info cards */
+    .contact-info-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Testimonial author layout */
+    .testimonial-author {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .author-image {
+        margin-bottom: 0.5rem;
+        margin-right: 0;
+    }
+    
+    /* CTA section */
+    .cta-section .btn {
+        width: 100%;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    /* General adjustments */
+    body {
+        padding-top: 50px;
+    }
+    
+    .navbar {
+        height: 50px;
+    }
+    
+    .logo {
+        height: 30px;
+    }
+    
+    /* Hero section */
+    .hero-section {
+        min-height: 30vh;
+    }
+    
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Section padding */
+    section {
+        padding: 2rem 0;
+    }
+    
+    /* Cards */
+    .service-card, .feature-card, .value-card {
+        margin-bottom: 1.5rem;
+    }
+    
+    /* Stats section */
+    .stat-card {
+        margin-bottom: 1rem;
+    }
+    
+    /* Form adjustments */
+    .contact-form, .feedback-form {
+        padding: 1.5rem;
+    }
+    
+    /* Footer */
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+    
+    .footer-social a {
+        margin-right: 5px;
+    }
+}
+
+/* Very small devices (phones, less than 400px) */
+@media (max-width: 399.98px) {
+    /* Hero section */
+    .hero-title {
+        font-size: 1.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    /* Buttons */
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+    
+    /* Pricing */
+    .price-tag .amount {
+        font-size: 2rem;
+    }
+    
+    .price-tag .currency {
+        font-size: 1.2rem;
+    }
+    
+    /* Testimonials */
+    .testimonial-text {
+        font-size: 0.9rem;
+    }
+}
+
+/* Landscape orientation adjustments */
+@media (max-height: 575.98px) and (orientation: landscape) {
+    .hero-section {
+        min-height: 60vh;
+    }
+}
+
+/* High resolution displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    /* Any high-res specific styles can go here */
+}
+
+/* Print styles */
+@media print {
+    body {
+        padding-top: 0;
+    }
+    
+    .navbar, .footer {
+        display: none;
+    }
+    
+    a::after {
+        content: " (" attr(href) ")";
+        font-size: 0.8em;
+        font-weight: normal;
+    }
+}
