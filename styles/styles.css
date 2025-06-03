@@ -70,8 +70,8 @@ body {
 }
 
 /* Icons */
-.fas, .fab, .far { /* Targets all Font Awesome icons */
-	color: var(--primary-color); /* Your primary teal */
+.fas, .fab, .far { /*to  Targets all Font Awesome icons */
+	color: var(--primary-color); 
 }
 
 /* Hero Section Styles */
@@ -118,7 +118,7 @@ body {
     animation-fill-mode: both;
     line-height: 1.4;
     max-width: 100%; /* Prevent overflow */
-    padding: 0 1rem; /* Add some padding */
+    padding: 0 1rem; 
 }
 
 .hero-buttons {
