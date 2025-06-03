@@ -2,7 +2,7 @@
 
 /* Large devices (desktops, less than 1200px) */
 @media (max-width: 1199.98px) {
-    /* General adjustments */
+    
     body {
         padding-top: 60px;
     }
@@ -30,8 +30,8 @@
     }
 }
 
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
+/* Medium devices  */
+@media (max-width: 992px) {
     /* Navigation adjustments */
     .navbar-collapse {
         background-color: var(--dark-color);
@@ -67,8 +67,8 @@
 }
 
 /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* General adjustments */
+@media (max-width: 768px) {
+    
     body {
         padding-top: 56px;
     }
@@ -125,7 +125,7 @@
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) {
+@media (max-width 576px) {
     /* General adjustments */
     body {
         padding-top: 50px;
@@ -183,7 +183,7 @@
 }
 
 /* Very small devices (phones, less than 400px) */
-@media (max-width: 399.98px) {
+@media (max-width: 400px) {
     /* Hero section */
     .hero-title {
         font-size: 1.5rem;
